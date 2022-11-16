@@ -1,4 +1,4 @@
-name: 마이크로 피처
+name: 마이크로 피처 템플릿
 description: 피처 구현을 위한 소규모 태스크를 작성하세요.
 title: "micro feat: "
 labels: ["micro feature"]
