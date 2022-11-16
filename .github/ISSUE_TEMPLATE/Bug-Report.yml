@@ -1,5 +1,5 @@
 name: 버그 리포트
-about: 기능 개선을 위해 버그를 제보해주세요.
+description: 기능 개선을 위해 버그를 제보해주세요.
 title: "fix: "
 labels: ["bug"]
 body: 
