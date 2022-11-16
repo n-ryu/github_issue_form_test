@@ -1,62 +1,43 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+name: 버그 리포트
+about: 기능 개선을 위해 버그를 제보해주세요.
+title: "fix: "
+labels: ["bug"]
+body: 
+- type: textarea
+  attributes: 
+    label: 버그 설명
+    description: 경험한 문제에 대해 상세히 적어주세요. (가능하다면 스크린샷도 함께 첨부해주세요)
+  validations:
+    required: true
+- type: textarea
+  attributes: 
+    label: 기대 동작 설명
+    description: 기대했던 동작 및 반응에 대해 상세히 적어주세요.
+  validations:
+    required: true
+- type: textarea
+  attributes: 
+    label: 버그 재현법
+    description: 문제를 재현하기 위한 방법을 적어주세요.
+    placeholder: |
+      1. Go to '...'
+      2. Click on '....'
+      3. Scroll down to '....'
+      4. See error
+  validations:
+    required: false
+- type: textarea
+  attributes: 
+    label: 실행 환경
+    description: 문제가 발생했던 실행 환경을 적어주세요.
+    placeholder: |
+      - OS: [e.g. iOS]
+      - Browser [e.g. chrome, safari]
+      - Version [e.g. 22]
+  validations:
+    required: false
+- type: textarea
+  attributes: 
+    label: 기타 참고 사항
+  validations:
+    required: false
