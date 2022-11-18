@@ -53,4 +53,8 @@ body:
     label: 기타 참고 사항
   validations:
     required: false
-
+- type: input
+  attributes:
+    label: 연락처
+  validations:
+    required: false
