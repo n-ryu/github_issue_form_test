@@ -26,18 +26,31 @@ body:
       4. See error
   validations:
     required: false
-- type: textarea
+- type: dropdown
   attributes: 
-    label: 실행 환경
-    description: 문제가 발생했던 실행 환경을 적어주세요.
-    placeholder: |
-      - OS: [e.g. iOS]
-      - Browser [e.g. chrome, safari]
-      - Version [e.g. 22]
+    label: 실행 환경 (OS)
+    description: 문제가 발생했던 OS을 골라주세요.
+    options:
+      - Windows
+      - MacOs
+      - Linux
+      - ETC...
   validations:
-    required: false
+    required: true
+- type: checkboxes
+  attributes: 
+    label: 실행 환경 (브라우저)
+    description: 문제가 발생했던 브라우저을 골라주세요.
+    options:
+      - label: Chrome
+      - label: Firefox
+      - label: Edge
+      - label: ETC...
+  validations:
+    required: true
 - type: textarea
   attributes: 
     label: 기타 참고 사항
   validations:
     required: false
+
