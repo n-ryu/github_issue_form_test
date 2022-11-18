@@ -39,13 +39,13 @@ body:
     required: true
 - type: checkboxes
   attributes: 
-    label: 실행 환경 (브라우저)
-    description: 문제가 발생했던 브라우저을 골라주세요.
+    label: 확인 사항
+    description: 아래와 같은 절차를 모두 확인 하셨는지 체크해주세요.
     options:
-      - label: Chrome
-      - label: Firefox
-      - label: Edge
-      - label: ETC...
+      - label: 탭 끄고 켜기
+      - label: 브라우저 끄고 켜기
+      - label: 컴퓨터 끄고 켜기
+        required: true
   validations:
     required: true
 - type: textarea
